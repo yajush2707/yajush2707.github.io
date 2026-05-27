@@ -1,13 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Name</title>
+    <title>Yajush Chaudhary | Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600;700&family=Space+Grotesk:wght=400;500;700&display=swap');
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body>
 
-    <input type="text" value="Your Name">
+<body class="bg-[#FAF9F5] text-[#1A1C1E] antialiased selection:bg-[#E25C38]/20 selection:text-black">
 
+    <div class="fixed top-4 md:top-6 left-0 right-0 z-50 px-2 md:px-4 flex justify-center">
+        <nav
+            class="bg-white/90 backdrop-blur-xl border border-gray-200/80 px-4 py-3 rounded-full shadow-lg flex items-center justify-between max-w-3xl w-full">
+            <a href="#"
+                class="heading-font font-bold tracking-tight text-xs pr-2 text-gray-900 hidden lg:inline-block">yajush<span
+                    class="text-[#E25C38]">.</span></a>
+
+            <div
+                class="flex items-center justify-center gap-1 sm:gap-2 text-[11px] font-bold tracking-wide text-gray-700 w-full lg:w-auto justify-evenly">
+                <a href="#about"
+                    class="hover:text-black hover:bg-gray-100/80 px-3 py-1.5 rounded-full transition">About</a>
+                <a href="#work"
+                    class="hover:text-black hover:bg-gray-100/80 px-3 py-1.5 rounded-full transition">Work</a>
+                <a href="#skills"
+                    class="hover:text-black hover:bg-gray-100/80 px-3 py-1.5 rounded-full transition">Skills & Tools</a>
+                <a href="#journey"
+                    class="hover:text-black hover:bg-gray-100/80 px-3 py-1.5 rounded-full transition">Journey</a>
+                <a href="#hobbies"
+                    class="hover:text-black hover:bg-gray-100/80 px-3 py-1.5 rounded-full transition">Hobbies</a>
+                <a href="#contact"
+                    class="hover:text-black hover:bg-gray-100/80 px-3 py-1.5 rounded-full transition">Contact</a>
+            </div>
+
+            <div class="items-center gap-1.5 hidden lg:flex">
+                <a href="https://www.linkedin.com/in/yajushchaudhary/" target="_blank"
+                    class="w-8 h-8 bg-gray-50 border border-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-black transition text-[11px] font-bold shadow-2xs">in</a>
+                <a href="https://github.com/yajush2707" target="_blank"
+                    class="w-8 h-8 bg-gray-50 border border-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-black transition text-[11px] font-bold shadow-2xs">git</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-6 pt-36 md:pt-44 pb-24 space-y-32">
+
+        <header id="about" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start relative pt-4 scroll-mt-36">
+
+            <div class="lg:col-span-8 space-y-8">
+                <div class="flex items-center gap-3 text-xs tracking-widest uppercase font-semibold text-gray-400">
+                    <span>Portfolio</span>
+                    <span>/</span>
+                    <span>2026</span>
+                </div>
+
+                <h1
+                    class="heading-font text-5xl md:text-7xl font-bold tracking-tight text-gray-900 leading-[0.95] flex flex-col">
+                    <span>Yajush</span>
+                    <span class="relative">Chaudhary<span
+                            class="inline-block w-3 h-3 md:w-4 md:h-4 bg-[#E25C38] rounded-full ml-1"></span></span>
+                </h1>
+
+                <div class="space-y-4 max-w-xl">
+                    <p class="text-lg md:text-xl text-gray-700 leading-relaxed font-light">
+                        <span class="font-medium text-gray-950">AI Product Manager</span>, Shipping optimized code
+                        architectures from
+                        <span
+                            class="inline-flex items-center px-2 py-0.5 rounded bg-orange-50 border border-orange-100 text-xs font-mono text-[#E25C38] mx-1">0
+                            → 1</span>
+                        across web applications, scripts, and system environments.
+                    </p>
+                    <p class="text-sm italic text-gray-400 font-light">
+                        "If I have to click it more than twice, I will write a script to do it in two milliseconds."
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-4 pt-2">
+                    <a href="https://www.linkedin.com/in/yajushchaudhary/" target="_blank"
+                        class="bg-[#E25C38] hover:bg-[#c94b2a] text-white text-sm font-medium px-6 py-3 rounded-full transition shadow-md flex items-center gap-2 group">
+                        Get in touch
+                        <span
+                            class="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200">↗</span>
+                    </a>
+                    <a href="#journey"
+                        class="border border-gray-300 bg-white hover:bg-gray-50 text-gray-800 text-sm font-medium px-6 py-3 rounded-full transition shadow-2xs">
+                        View my journey
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-4 flex flex-col items-center lg:items-end space-y-4 w-full">
+                <div
+                    class="bg-white border border-gray-200/60 px-3.5 py-1.5 rounded-full shadow-2xs text-xs flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span class="text-gray-700 font-medium">Kuala Lumpur, Malaysia</span>
+                    <span class="text-gray-300">|</span>
+                    <span id="live-time" class="text-gray-400 font-mono">--:--</span>
+                </div>
+
+                <div
+                    class="relative bg-white p-3 rounded-[2rem] border border-gray-200/60 shadow-sm max-w-[280px] w-full group">
+                    <div
+                        class="aspect-square bg-linear-to-tr from-orange-100 to-amber-50 rounded-[1.6rem] overflow-hidden relative flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=500"
+                            alt="Yajush"
+                            class="w-full h-full object-cover filter contrast-105 mix-blend-multiply opacity-90 transition group-hover:scale-105 duration-300" />
+                    </div>
+                    <div
+                        class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md border border-gray-100 py-1.5 px-3 rounded-xl text-[11px] font-medium text-gray-600 shadow-2xs text-center">
+                        Based in Kuala Lumpur
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="work" class="space-y-8 scroll-mt-32">
+            <h2 class="heading-font text-xs font-bold tracking-widest text-gray-400 uppercase">/ 01 Selected Work &
+                Projects</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div
+                    class="border border-gray-200/60 bg-white p-8 rounded-2xl shadow-2xs hover:shadow-sm hover:border-gray-300 transition space-y-4 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl">⚡</span>
+                            <span
+                                class="text-[10px] font-mono bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded border border-emerald-200">🟢
+                                Live & Stable</span>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-gray-900 mt-4">Project Automation Engine</h3>
+                        <p class="text-sm text-gray-600 mt-2 leading-relaxed">A custom automation framework that
+                            monitors background operations, handles data aggregation workflows, and eliminates
+                            repetitive tasks flawlessly.</p>
+                    </div>
+                    <div class="pt-4 flex gap-3 text-xs font-medium">
+                        <span class="text-gray-400 font-mono">#Python</span> <span
+                            class="text-gray-400 font-mono">#Docker</span>
+                    </div>
+                </div>
+                <div
+                    class="border border-gray-200/60 bg-white p-8 rounded-2xl shadow-2xs hover:shadow-sm hover:border-gray-300 transition space-y-4 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl">💻</span>
+                            <span
+                                class="text-[10px] font-mono bg-amber-50 text-amber-700 px-2 py-0.5 rounded border border-amber-200">🟡
+                                Active Lab Build</span>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold text-gray-900 mt-4">Full-Stack Application Layout</h3>
+                        <p class="text-sm text-gray-600 mt-2 leading-relaxed">An elegant, high-performance responsive
+                            interface layer configured to sync seamlessly with real-time cloud data endpoints.</p>
+                    </div>
+                    <div class="pt-4 flex gap-3 text-xs font-medium">
+                        <span class="text-gray-400 font-mono">#TypeScript</span> <span
+                            class="text-gray-400 font-mono">#Tailwind</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="space-y-8 scroll-mt-32">
+            <h2 class="heading-font text-xs font-bold tracking-widest text-gray-400 uppercase">/ 02 Skills & Tools</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-4">
+                    <h3 class="text-sm font-semibold text-gray-500">Core Engineering Stack</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="bg-white border border-gray-200 text-xs px-3 py-1.5 rounded-lg text-gray-700 shadow-2xs font-medium">Python</span>
+                        <span
+                            class="bg-white border border-gray-200 text-xs px-3 py-1.5 rounded-lg text-gray-700 shadow-2xs font-medium">JavaScript</span>
+                        <span
+                            class="bg-white border border-gray-200 text-xs px-3 py-1.5 rounded-lg text-gray-700 shadow-2xs font-medium">TypeScript</span>
+                        <span
+                            class="bg-white border border-gray-200 text-xs px-3 py-1.5 rounded-lg text-gray-700 shadow-2xs font-medium">Tailwind
+                            CSS</span>
+                        <span
+                            class="bg-white border border-gray-200 text-xs px-3 py-1.5 rounded-lg text-gray-700 shadow-2xs font-medium">Node.js</span>
+                        <span
+                            class="bg-white border border-gray-200 text-xs px-3 py-1.5 rounded-lg text-gray-700 shadow-2xs font-medium">SQL
+                            / NoSQL</span>
+                        <span
+                            class="bg-white border border-gray-200 text-xs px-3 py-1.5 rounded-lg text-gray-700 shadow-2xs font-medium">Git
+                            & GitHub</span>
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <h3 class="text-sm font-semibold text-gray-500">Survival Indicators</h3>
+                    <div class="space-y-3 text-xs">
+                        <div>
+                            <div class="flex justify-between mb-1"><span class="text-gray-600">Documentation & API
+                                    Parsing</span><span class="text-[#E25C38] font-medium font-mono">95%</span></div>
+                            <div class="w-full bg-gray-200 h-1 rounded-full">
+                                <div class="bg-[#E25C38] h-1 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span class="text-gray-600">Git Merge Conflict
+                                    Resolution Without Panic</span><span
+                                    class="text-[#E25C38] font-medium font-mono">88%</span></div>
+                            <div class="w-full bg-gray-200 h-1 rounded-full">
+                                <div class="bg-[#E25C38] h-1 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span class="text-gray-600">Fixing Family Wi-Fi
+                                    Subnets</span><span class="text-[#E25C38] font-medium font-mono">100%</span></div>
+                            <div class="w-full bg-gray-200 h-1 rounded-full">
+                                <div class="bg-[#E25C38] h-1 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="journey" class="space-y-8 scroll-mt-32">
+            <h2 class="heading-font text-xs font-bold tracking-widest text-gray-400 uppercase">/ 03 Career Journey</h2>
+
+            <div class="space-y-12 border-l border-gray-200 pl-6 ml-2">
+                <div class="relative space-y-2">
+                    <div class="absolute -left-[31px] top-1.5 w-2 h-2 rounded-full bg-[#E25C38] ring-4 ring-[#FAF9F5]">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <h3 class="heading-font text-lg font-medium text-gray-900">Your Current Enterprise Role /
+                            Venture</h3>
+                        <span class="text-xs text-gray-400 font-medium font-mono">2025 — Present</span>
+                    </div>
+                    <p class="text-sm text-[#E25C38] font-semibold">AI Product Management / Strategy</p>
+                    <p class="text-sm text-gray-600 max-w-2xl leading-relaxed">
+                        Leading cross-functional feature builds, managing lifecycle definitions, and translating
+                        technological system optimizations into clean business product targets.
+                    </p>
+                </div>
+                <div class="relative space-y-2">
+                    <div class="absolute -left-[31px] top-1.5 w-2 h-2 rounded-full bg-gray-300 ring-4 ring-[#FAF9F5]">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <h3 class="heading-font text-lg font-medium text-gray-900">Software Engineering Specialized
+                            Focus</h3>
+                        <span class="text-xs text-gray-400 font-medium font-mono">2024</span>
+                    </div>
+                    <p class="text-sm text-[#E25C38] font-semibold">Full-Stack Architecture Creator</p>
+                    <p class="text-sm text-gray-600 max-w-2xl leading-relaxed">
+                        Built interactive application models, handled complex Git branch resolutions, and managed clean
+                        layout rendering stacks.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies" class="space-y-8 scroll-mt-32">
+            <h2 class="heading-font text-xs font-bold tracking-widest text-gray-400 uppercase">/ 04 Hobbies & Daily
+                Drivers</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-600">
+                <div class="bg-white border border-gray-200/60 p-6 rounded-xl">
+                    <span class="text-xl block mb-2">跑</span>
+                    <span class="font-bold text-gray-900 block mb-1">WHOOP Optimizations</span>
+                    Tracking recovery metrics, maintaining calculated sleep consistency thresholds, and aligning my
+                    physical strain to work productivity profiles.
+                </div>
+                <div class="bg-white border border-gray-200/60 p-6 rounded-xl">
+                    <span class="text-xl block mb-2">⌨️</span>
+                    <span class="font-bold text-gray-900 block mb-1">Desk Setup & Gear</span>
+                    Obsessing over fine-tuned tactile mechanical switches, sleek workspace wire management solutions,
+                    and custom layout terminal aesthetics.
+                </div>
+                <div class="bg-white border border-gray-200/60 p-6 rounded-xl">
+                    <span class="text-xl block mb-2">🌙</span>
+                    <span class="font-bold text-gray-900 block mb-1">The Anti-Light Mode Campaign</span>
+                    Actively advocating for dark mode configurations across every IDE, platform console, and code
+                    library interface in existence.
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="pt-12 border-t border-gray-200/80 space-y-8 scroll-mt-32">
+            <div class="space-y-2">
+                <h2 class="heading-font text-3xl font-bold tracking-tight text-gray-900">Let's build something.</h2>
+                <p class="text-sm text-gray-600 max-w-md">Drop me a message if you want to collaborate on an AI product
+                    roadmap, analyze system strategies, or start an interview process.</p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-6 sm:gap-12 text-sm pt-2">
+                <div><span class="text-gray-400 font-medium block text-xs uppercase tracking-wider mb-1">01. Direct
+                        Mail</span> <a href="mailto:your.email@example.com"
+                        class="text-[#E25C38] font-medium hover:underline text-base">your.email@example.com</a></div>
+                <div><span class="text-gray-400 font-medium block text-xs uppercase tracking-wider mb-1">02. Source
+                        Hub</span> <a href="https://github.com/yajush2707" target="_blank"
+                        class="text-[#E25C38] font-medium hover:underline text-base">github.com/yajush2707</a></div>
+            </div>
+
+            <div
+                class="pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400 font-medium">
+                <p>© 2026 Yajush Chaudhary. Built with pure code and zero unnecessary overhead.</p>
+                <p class="font-mono text-[10px]">WHOOP synced • Recovery Optimal</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        function updateTime() {
+            const timeElement = document.getElementById('live-time');
+            if (timeElement) {
+                const now = new Date();
+                const options = { timeZone: 'Asia/Kuala_Lumpur', hour: '2-digit', minute: '2-digit' };
+                timeElement.innerText = now.toLocaleTimeString([], options);
+            }
+        }
+        updateTime();
+        setInterval(updateTime, 60000);
+    </script>
 </body>
+
 </html>
